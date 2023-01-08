@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+:root{
+    --c:green;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+.nav{
+    background-image: linear-gradient(60deg, green, white);
+    width: 100%; 
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    flex-wrap: wrap;
+}
+.nav ul li a{
+    list-style: none;
+    text-decoration: none;
+}
+.list{
+    display: inline-block;
+    padding: 10px;
+}
+.nav ul li:nth-of-type(2){
+    margin-left: 30px;
+}
+h2{
+    font-size: 25px;
+    padding: 5px;
+    background-color: green;
+}
+.srh, .srhbtn{
+    outline-style: none;
+    border: none;
+    height: 30px;
+}
+.srhbtn{
+    background-color: green;
+    border-top-right-radius:7px ;
+    border-bottom-right-radius:7px ;
+    font-weight: bold;
+    padding-right: 7px;
+}
+.nav ul input{
+    list-style: none;
+    margin-left: 50px;
+   
+}
+.bar{
+    display: flex;
+    height: 1000px;
+    width: 100vw;
+    position: relative;
+    top: 70px;
+}
+.leftbar{
+    background-color: yellow;
+    width: 100vw;
+}
+.mainbar{
+    background-color: red;
+    width: 500vw;
+}
+.rightbar{
+    background-color: blue;
+    width: 100vw;
+}
+.footer{
+    background-color: blueviolet;
+    height: 60px;
+    width: 100vw;
+    position: relative;
+    top: 200px;
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  body {
+    background-color: black;
+  }
+}
